@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	/* outline: 1px dotted red; */
+	font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	background-color: #c0a5ab;
+}
+
+@font-face {
+	font-family: gunterz;
+	src: url("../assets/fonts/gunterz-bold.otf");
+}
+
+#page {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding: 40px 50px;
+	overflow: hidden;
+}
+
+#bc {
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+
+#bcimg {
+	height: 100%;
+	width: 55vw;
+	margin-left: 30vw;
+}
+
+nav {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav p:has(i) {
+	height: 4vw;
+	width: 4vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	font-size: 2vw;
+	cursor: pointer;
+}
+
+nav a p {
+	font-size: 1vw;
+	font-family: gunterz;
+	text-transform: uppercase;
+}
+
+#text {
+	width: 32.5vw;
+	margin-top: 8vw;
+}
+
+.h1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: -10px;
+	column-gap: 10px;
+	font-size: 5vw;
+}
+
+h1{
+	font-family: gunterz;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.r {
+	height: 4vw;
+	width: 100%;
+	margin-top: -15px;
+	background-color: #fff;
+}
+
+#horizontal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-wrap: nowrap;
+	-webkit-text-stroke: 1px #fff;
+	color: transparent;
+	transform: rotate(90deg);
+}
+
+
+#horizontal h1 {
+	font-size: 5vw;
+}
