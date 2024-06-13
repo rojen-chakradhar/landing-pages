@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	/* outline: 1px dotted red; */
+	font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	color: #ffffff;
+	background-color: #020102;
+}
+
+@font-face {
+	font-family: vanguard;
+	src: url("../assets/fonts/vanguard.woff2");
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 40px 0;
+}
+
+nav .l,
+nav .r {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	column-gap: 5vw;
+}
+
+nav .r {
+	column-gap: 10vw;
+	justify-content: right;
+}
+
+nav img {
+	width: 40px;
+	cursor: pointer;
+}
+
+nav form {
+	height: 30px;
+	width: 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav form i {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 10px;
+	border: none;
+	border-radius: 20px 0 0 20px;
+	font-size: 14px;
+	color: #888;
+	background-color: #ffffff20;
+}
+
+nav form input {
+	height: 100%;
+	width: 100%;
+	padding: 0 5px;
+	border: none;
+	border-radius: 0 20px 20px 0;
+	font-size: 14px;
+	color: #888;
+	background-color: #ffffff20;
+}
+
+input::placeholder {
+	color: #888;
+}
+
+input:focus {
+	outline: none;
+}
+
+nav ul:first-child {
+	display: flex;
+	align-items: center;
+	column-gap: 4vw;
+}
+
+nav ul:last-child {
+	display: flex;
+	align-items: center;
+	column-gap: 2vw;
+}
+
+nav ul li {
+	font-size: 14px;
+	text-transform: capitalize;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+nav ul li i {
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+
+h1 {
+	margin-bottom: 2vw;
+	font-size: 30.3vw;
+	font-family: vanguard;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: default;
+}
+
+.scroller {
+	display: flex;
+	align-items: center;
+	padding: 0 40px;
+	text-transform: capitalize;
+}
+
+section .scroller .l,
+section .scroller .r {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	column-gap: 1vw;
+}
+
+h3 {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+section .scroller .r {
+	justify-content: right;
+}
+
+section .scroller i {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #555;
+	border-radius: 50%;
+	color: #555;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.container {
+	margin-top: 2vw;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+	column-gap: 2vw;
+}
+
+.card {
+	cursor: pointer;
+}
+
+.card figure {
+	height: 120px;
+	width: 220px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.card figure img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card p {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
